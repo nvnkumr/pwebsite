@@ -1,0 +1,42 @@
+<!-- HTML -->
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to my website</h1>
+    <p>My name is John and this is my personal website.</p>
+    <img src="profile.jpg" alt="Profile picture">
+    <button id="button">Click me!</button>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+/* CSS */
+body {
+  font-family: Arial, sans-serif;
+  color: purple;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: blue;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* JavaScript */
+const button = document.querySelector("#button");
+
+button.addEventListener("click", function() {
+  console.log("Button was clicked!");
+});
