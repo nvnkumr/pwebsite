@@ -1,42 +1,63 @@
-<!-- HTML -->
 <html>
   <head>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Welcome to my website</h1>
-    <p>My name is John and this is my personal website.</p>
-    <img src="profile.jpg" alt="Profile picture">
-    <button id="button">Click me!</button>
-    <script src="script.js"></script>
+    <header>
+      <h1>Welcome to my website</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About me</h2>
+        <p>Hello, my name is John and I'm a software developer. I have been programming for 5 years and I have a passion for creating useful and innovative applications.</p>
+        <img src="profile.jpg" alt="Profile picture">
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>Express</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or want to get in touch, you can contact me via email at <a href="mailto:john@example.com">john@example.com</a> or by filling out the form below:</p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <br>
+          <input type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2021 John</p>
+    </footer>
   </body>
 </html>
-
-/* CSS */
-body {
-  font-family: Arial, sans-serif;
-  color: purple;
-}
-
-h1 {
-  font-size: 36px;
-  text-align: center;
-  color: blue;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-img {
-  width: 200px;
-  border-radius: 50%;
-}
-
-/* JavaScript */
-const button = document.querySelector("#button");
-
-button.addEventListener("click", function() {
-  console.log("Button was clicked!");
-});
